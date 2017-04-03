@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF4B88F00B6D110C9CB2F50A /* libPods-wechats.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B626841D2DD5DA98E1FE2 /* libPods-wechats.a */; };
+		BA1FDA761E62BE560013B328 /* CLHSeeBigPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1FDA751E62BE560013B328 /* CLHSeeBigPhotoViewController.m */; };
+		BA1FDA7D1E62FA730013B328 /* CLHHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1FDA7C1E62FA730013B328 /* CLHHeadView.m */; };
+		BA20B61F1E5C2FCD00E9D59A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA20B61D1E5C2FCD00E9D59A /* Main.storyboard */; };
+		BA20B6221E5C2FCD00E9D59A /* wechats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA20B6201E5C2FCD00E9D59A /* wechats.xcdatamodeld */; };
+		BA20B6241E5C2FCD00E9D59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA20B6231E5C2FCD00E9D59A /* Assets.xcassets */; };
+		BA20B6271E5C2FCD00E9D59A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA20B6251E5C2FCD00E9D59A /* LaunchScreen.storyboard */; };
+		BA20B6481E5C301B00E9D59A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B6451E5C301B00E9D59A /* AppDelegate.m */; };
+		BA20B6491E5C301B00E9D59A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B6471E5C301B00E9D59A /* main.m */; };
+		BA20B64C1E5C320A00E9D59A /* CLHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B64B1E5C320A00E9D59A /* CLHTabBarViewController.m */; };
+		BA20B6511E5C33D600E9D59A /* CLHChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B6501E5C33D600E9D59A /* CLHChatViewController.m */; };
+		BA20B6541E5C33EE00E9D59A /* CLHContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B6531E5C33EE00E9D59A /* CLHContactsViewController.m */; };
+		BA20B6571E5C341500E9D59A /* CLHDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B6561E5C341500E9D59A /* CLHDiscoverViewController.m */; };
+		BA20B65A1E5C342400E9D59A /* CLHMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B6591E5C342400E9D59A /* CLHMeViewController.m */; };
+		BA20B6681E5C367800E9D59A /* UIBarButtonItem+CLH.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B65F1E5C367800E9D59A /* UIBarButtonItem+CLH.m */; };
+		BA20B6691E5C367800E9D59A /* UIImage+CLH.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B6611E5C367800E9D59A /* UIImage+CLH.m */; };
+		BA20B66B1E5C367800E9D59A /* UITextField+CLH.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B6651E5C367800E9D59A /* UITextField+CLH.m */; };
+		BA20B66C1E5C367800E9D59A /* UIView+CLH.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B6671E5C367800E9D59A /* UIView+CLH.m */; };
+		BA20B7371E5C69DD00E9D59A /* CLHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B7361E5C69DD00E9D59A /* CLHNavigationController.m */; };
+		BA20B73F1E5C6F7D00E9D59A /* CLHMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B73E1E5C6F7D00E9D59A /* CLHMessage.m */; };
+		BA20B7411E5C779300E9D59A /* CLHChatWithPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA20B7401E5C779300E9D59A /* CLHChatWithPersonViewController.m */; };
+		BA3082A01E5D5B460073FF74 /* CLHChatmessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA30829F1E5D5B460073FF74 /* CLHChatmessageCell.m */; };
+		BA9C89E71E5ED61F008A8200 /* CLHFriendSpaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9C89E61E5ED61F008A8200 /* CLHFriendSpaceViewController.m */; };
+		BAA282451E5EFFD000C0DEC7 /* CLHFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA282441E5EFFD000C0DEC7 /* CLHFriend.m */; };
+		BAA282481E5EFFE400C0DEC7 /* CLHFriendGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA282471E5EFFE400C0DEC7 /* CLHFriendGroup.m */; };
+		BAA2824A1E5F061300C0DEC7 /* Friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA282491E5F061300C0DEC7 /* Friends.plist */; };
+		BAA282701E5F18C400C0DEC7 /* CLHFriendInfomation.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA2826F1E5F18C400C0DEC7 /* CLHFriendInfomation.m */; };
+		BADA79861E6052C1007E3442 /* CLHFriendCircleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADA79851E6052C1007E3442 /* CLHFriendCircleCell.m */; };
+		BADA79891E6055EC007E3442 /* CLHFriendCircleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BADA79881E6055EC007E3442 /* CLHFriendCircleModel.m */; };
+		BADFF3811E61448200756611 /* CLHWerChatPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = BADFF3801E61448200756611 /* CLHWerChatPhotoView.m */; };
+		BADFF3841E615E0600756611 /* CLHLikeAndCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BADFF3831E615E0600756611 /* CLHLikeAndCommentView.m */; };
+		BADFF3871E61668D00756611 /* CLHCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BADFF3861E61668D00756611 /* CLHCommentView.m */; };
+		BADFF38A1E6175C200756611 /* CLHLikeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BADFF3891E6175C200756611 /* CLHLikeModel.m */; };
+		BADFF38D1E617D8500756611 /* CLHCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BADFF38C1E617D8500756611 /* CLHCommentModel.m */; };
+		BADFF3901E6181EA00756611 /* CLHBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BADFF38F1E6181EA00756611 /* CLHBaseModel.m */; };
+		C10C22521E73F40E00FE9828 /* CLHPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C10C224F1E73F40E00FE9828 /* CLHPopAnimation.m */; };
+		C11EA8E71E85472E005F34C1 /* CLHChatData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C11EA8E51E85472E005F34C1 /* CLHChatData.xcdatamodeld */; };
+		C11EA8EB1E855200005F34C1 /* CLHShakeOffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11EA8EA1E855200005F34C1 /* CLHShakeOffViewController.m */; };
+		C1523A0A1E82B2E60065A2E0 /* CLHPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1523A091E82B2E60065A2E0 /* CLHPhotoBrowserViewController.m */; };
+		C1523A0D1E82B3410065A2E0 /* CLHPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1523A0C1E82B3410065A2E0 /* CLHPhotoCell.m */; };
+		C1893F571E83F1C000986416 /* CLHPhotoBrowserAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C1893F561E83F1C000986416 /* CLHPhotoBrowserAnimator.m */; };
+		C19571321E6BA9E200054E62 /* CLHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19571311E6BA9E100054E62 /* CLHWebViewController.m */; };
+		C19571341E6BAA4D00054E62 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19571331E6BAA4D00054E62 /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		C1B593751E7429E70084C810 /* CLHPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B593741E7429E70084C810 /* CLHPresentationController.m */; };
+		C1B593781E742A2B0084C810 /* CLHPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B593771E742A2B0084C810 /* CLHPopViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		837C77109C71F1501F85A44A /* Pods-wechats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wechats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wechats/Pods-wechats.debug.xcconfig"; sourceTree = "<group>"; };
+		A76B626841D2DD5DA98E1FE2 /* libPods-wechats.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wechats.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA1FDA741E62BE560013B328 /* CLHSeeBigPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHSeeBigPhotoViewController.h; sourceTree = "<group>"; };
+		BA1FDA751E62BE560013B328 /* CLHSeeBigPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHSeeBigPhotoViewController.m; sourceTree = "<group>"; };
+		BA1FDA7B1E62FA730013B328 /* CLHHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHHeadView.h; sourceTree = "<group>"; };
+		BA1FDA7C1E62FA730013B328 /* CLHHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHHeadView.m; sourceTree = "<group>"; };
+		BA20B6111E5C2FCD00E9D59A /* wechats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wechats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA20B61E1E5C2FCD00E9D59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA20B6211E5C2FCD00E9D59A /* wechats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wechats.xcdatamodel; sourceTree = "<group>"; };
+		BA20B6231E5C2FCD00E9D59A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA20B6261E5C2FCD00E9D59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA20B6281E5C2FCD00E9D59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA20B6441E5C301B00E9D59A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA20B6451E5C301B00E9D59A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA20B6471E5C301B00E9D59A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA20B64A1E5C320A00E9D59A /* CLHTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHTabBarViewController.h; sourceTree = "<group>"; };
+		BA20B64B1E5C320A00E9D59A /* CLHTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHTabBarViewController.m; sourceTree = "<group>"; };
+		BA20B64E1E5C32B700E9D59A /* CLHPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPrefixHeader.pch; sourceTree = "<group>"; };
+		BA20B64F1E5C33D600E9D59A /* CLHChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHChatViewController.h; sourceTree = "<group>"; };
+		BA20B6501E5C33D600E9D59A /* CLHChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHChatViewController.m; sourceTree = "<group>"; };
+		BA20B6521E5C33EE00E9D59A /* CLHContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHContactsViewController.h; sourceTree = "<group>"; };
+		BA20B6531E5C33EE00E9D59A /* CLHContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHContactsViewController.m; sourceTree = "<group>"; };
+		BA20B6551E5C341500E9D59A /* CLHDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHDiscoverViewController.h; sourceTree = "<group>"; };
+		BA20B6561E5C341500E9D59A /* CLHDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHDiscoverViewController.m; sourceTree = "<group>"; };
+		BA20B6581E5C342400E9D59A /* CLHMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHMeViewController.h; sourceTree = "<group>"; };
+		BA20B6591E5C342400E9D59A /* CLHMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHMeViewController.m; sourceTree = "<group>"; };
+		BA20B65E1E5C367800E9D59A /* UIBarButtonItem+CLH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CLH.h"; sourceTree = "<group>"; };
+		BA20B65F1E5C367800E9D59A /* UIBarButtonItem+CLH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CLH.m"; sourceTree = "<group>"; };
+		BA20B6601E5C367800E9D59A /* UIImage+CLH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CLH.h"; sourceTree = "<group>"; };
+		BA20B6611E5C367800E9D59A /* UIImage+CLH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CLH.m"; sourceTree = "<group>"; };
+		BA20B6641E5C367800E9D59A /* UITextField+CLH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CLH.h"; sourceTree = "<group>"; };
+		BA20B6651E5C367800E9D59A /* UITextField+CLH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CLH.m"; sourceTree = "<group>"; };
+		BA20B6661E5C367800E9D59A /* UIView+CLH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CLH.h"; sourceTree = "<group>"; };
+		BA20B6671E5C367800E9D59A /* UIView+CLH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLH.m"; sourceTree = "<group>"; };
+		BA20B7301E5C67B800E9D59A /* CLHChatWithPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHChatWithPersonViewController.h; sourceTree = "<group>"; };
+		BA20B7351E5C69DD00E9D59A /* CLHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHNavigationController.h; sourceTree = "<group>"; };
+		BA20B7361E5C69DD00E9D59A /* CLHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHNavigationController.m; sourceTree = "<group>"; };
+		BA20B73D1E5C6F7D00E9D59A /* CLHMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHMessage.h; sourceTree = "<group>"; };
+		BA20B73E1E5C6F7D00E9D59A /* CLHMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHMessage.m; sourceTree = "<group>"; };
+		BA20B7401E5C779300E9D59A /* CLHChatWithPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHChatWithPersonViewController.m; sourceTree = "<group>"; };
+		BA30829E1E5D5B460073FF74 /* CLHChatmessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHChatmessageCell.h; sourceTree = "<group>"; };
+		BA30829F1E5D5B460073FF74 /* CLHChatmessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHChatmessageCell.m; sourceTree = "<group>"; };
+		BA9C89E51E5ED61F008A8200 /* CLHFriendSpaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHFriendSpaceViewController.h; sourceTree = "<group>"; };
+		BA9C89E61E5ED61F008A8200 /* CLHFriendSpaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHFriendSpaceViewController.m; sourceTree = "<group>"; };
+		BAA282431E5EFFD000C0DEC7 /* CLHFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHFriend.h; sourceTree = "<group>"; };
+		BAA282441E5EFFD000C0DEC7 /* CLHFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHFriend.m; sourceTree = "<group>"; };
+		BAA282461E5EFFE400C0DEC7 /* CLHFriendGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHFriendGroup.h; sourceTree = "<group>"; };
+		BAA282471E5EFFE400C0DEC7 /* CLHFriendGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHFriendGroup.m; sourceTree = "<group>"; };
+		BAA282491E5F061300C0DEC7 /* Friends.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Friends.plist; sourceTree = "<group>"; };
+		BAA2826E1E5F18C400C0DEC7 /* CLHFriendInfomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHFriendInfomation.h; sourceTree = "<group>"; };
+		BAA2826F1E5F18C400C0DEC7 /* CLHFriendInfomation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHFriendInfomation.m; sourceTree = "<group>"; };
+		BADA79841E6052C1007E3442 /* CLHFriendCircleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHFriendCircleCell.h; sourceTree = "<group>"; };
+		BADA79851E6052C1007E3442 /* CLHFriendCircleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHFriendCircleCell.m; sourceTree = "<group>"; };
+		BADA79871E6055EC007E3442 /* CLHFriendCircleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHFriendCircleModel.h; sourceTree = "<group>"; };
+		BADA79881E6055EC007E3442 /* CLHFriendCircleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHFriendCircleModel.m; sourceTree = "<group>"; };
+		BADFF37F1E61448200756611 /* CLHWerChatPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHWerChatPhotoView.h; sourceTree = "<group>"; };
+		BADFF3801E61448200756611 /* CLHWerChatPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHWerChatPhotoView.m; sourceTree = "<group>"; };
+		BADFF3821E615E0600756611 /* CLHLikeAndCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHLikeAndCommentView.h; sourceTree = "<group>"; };
+		BADFF3831E615E0600756611 /* CLHLikeAndCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHLikeAndCommentView.m; sourceTree = "<group>"; };
+		BADFF3851E61668D00756611 /* CLHCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHCommentView.h; sourceTree = "<group>"; };
+		BADFF3861E61668D00756611 /* CLHCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHCommentView.m; sourceTree = "<group>"; };
+		BADFF3881E6175C200756611 /* CLHLikeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHLikeModel.h; sourceTree = "<group>"; };
+		BADFF3891E6175C200756611 /* CLHLikeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHLikeModel.m; sourceTree = "<group>"; };
+		BADFF38B1E617D8500756611 /* CLHCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHCommentModel.h; sourceTree = "<group>"; };
+		BADFF38C1E617D8500756611 /* CLHCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHCommentModel.m; sourceTree = "<group>"; };
+		BADFF38E1E6181EA00756611 /* CLHBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHBaseModel.h; sourceTree = "<group>"; };
+		BADFF38F1E6181EA00756611 /* CLHBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHBaseModel.m; sourceTree = "<group>"; };
+		BB16ADA9540042D4CE9DDE36 /* Pods-wechats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wechats.release.xcconfig"; path = "Pods/Target Support Files/Pods-wechats/Pods-wechats.release.xcconfig"; sourceTree = "<group>"; };
+		C10C224E1E73F40E00FE9828 /* CLHPopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPopAnimation.h; sourceTree = "<group>"; };
+		C10C224F1E73F40E00FE9828 /* CLHPopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHPopAnimation.m; sourceTree = "<group>"; };
+		C11EA8E61E85472E005F34C1 /* CLHChatData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CLHChatData.xcdatamodel; sourceTree = "<group>"; };
+		C11EA8E91E855200005F34C1 /* CLHShakeOffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHShakeOffViewController.h; sourceTree = "<group>"; };
+		C11EA8EA1E855200005F34C1 /* CLHShakeOffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHShakeOffViewController.m; sourceTree = "<group>"; };
+		C1523A081E82B2E60065A2E0 /* CLHPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		C1523A091E82B2E60065A2E0 /* CLHPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHPhotoBrowserViewController.m; sourceTree = "<group>"; };
+		C1523A0B1E82B3410065A2E0 /* CLHPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPhotoCell.h; sourceTree = "<group>"; };
+		C1523A0C1E82B3410065A2E0 /* CLHPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHPhotoCell.m; sourceTree = "<group>"; };
+		C1893F551E83F1C000986416 /* CLHPhotoBrowserAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPhotoBrowserAnimator.h; sourceTree = "<group>"; };
+		C1893F561E83F1C000986416 /* CLHPhotoBrowserAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHPhotoBrowserAnimator.m; sourceTree = "<group>"; };
+		C19571301E6BA9E100054E62 /* CLHWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHWebViewController.h; sourceTree = "<group>"; };
+		C19571311E6BA9E100054E62 /* CLHWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHWebViewController.m; sourceTree = "<group>"; };
+		C19571331E6BAA4D00054E62 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C1B593731E7429E70084C810 /* CLHPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPresentationController.h; sourceTree = "<group>"; };
+		C1B593741E7429E70084C810 /* CLHPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHPresentationController.m; sourceTree = "<group>"; };
+		C1B593761E742A2B0084C810 /* CLHPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPopViewController.h; sourceTree = "<group>"; };
+		C1B593771E742A2B0084C810 /* CLHPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHPopViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA20B60E1E5C2FCD00E9D59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19571341E6BAA4D00054E62 /* WebKit.framework in Frameworks */,
+				AF4B88F00B6D110C9CB2F50A /* libPods-wechats.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840A6B8A8F47D21950558F30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				837C77109C71F1501F85A44A /* Pods-wechats.debug.xcconfig */,
+				BB16ADA9540042D4CE9DDE36 /* Pods-wechats.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84EC8181DE167E18C7374F5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C19571331E6BAA4D00054E62 /* WebKit.framework */,
+				A76B626841D2DD5DA98E1FE2 /* libPods-wechats.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA1FDA7A1E62FA600013B328 /* head */ = {
+			isa = PBXGroup;
+			children = (
+				BA1FDA7B1E62FA730013B328 /* CLHHeadView.h */,
+				BA1FDA7C1E62FA730013B328 /* CLHHeadView.m */,
+			);
+			path = head;
+			sourceTree = "<group>";
+		};
+		BA20B6081E5C2FCD00E9D59A = {
+			isa = PBXGroup;
+			children = (
+				BA20B6131E5C2FCD00E9D59A /* wechats */,
+				BA20B6121E5C2FCD00E9D59A /* Products */,
+				840A6B8A8F47D21950558F30 /* Pods */,
+				84EC8181DE167E18C7374F5F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA20B6121E5C2FCD00E9D59A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B6111E5C2FCD00E9D59A /* wechats.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA20B6131E5C2FCD00E9D59A /* wechats */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B62E1E5C301B00E9D59A /* Classes */,
+				BA20B61D1E5C2FCD00E9D59A /* Main.storyboard */,
+				BA20B6231E5C2FCD00E9D59A /* Assets.xcassets */,
+				BA20B6251E5C2FCD00E9D59A /* LaunchScreen.storyboard */,
+				BA20B6281E5C2FCD00E9D59A /* Info.plist */,
+				BA20B6201E5C2FCD00E9D59A /* wechats.xcdatamodeld */,
+				BA20B6141E5C2FCD00E9D59A /* Supporting Files */,
+			);
+			path = wechats;
+			sourceTree = "<group>";
+		};
+		BA20B6141E5C2FCD00E9D59A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA20B62E1E5C301B00E9D59A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B62F1E5C301B00E9D59A /* Chat */,
+				BA20B6331E5C301B00E9D59A /* Contacts */,
+				BA20B6371E5C301B00E9D59A /* Discover */,
+				BA20B63F1E5C301B00E9D59A /* Me */,
+				BA20B63B1E5C301B00E9D59A /* Main */,
+				BA20B6431E5C301B00E9D59A /* Others */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BA20B62F1E5C301B00E9D59A /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B6301E5C301B00E9D59A /* Controller */,
+				BA20B6311E5C301B00E9D59A /* Model */,
+				BA20B6321E5C301B00E9D59A /* View */,
+				C11EA8DB1E853E7F005F34C1 /* coreData */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		BA20B6301E5C301B00E9D59A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B64F1E5C33D600E9D59A /* CLHChatViewController.h */,
+				BA20B6501E5C33D600E9D59A /* CLHChatViewController.m */,
+				BA20B7301E5C67B800E9D59A /* CLHChatWithPersonViewController.h */,
+				BA20B7401E5C779300E9D59A /* CLHChatWithPersonViewController.m */,
+				C1B593761E742A2B0084C810 /* CLHPopViewController.h */,
+				C1B593771E742A2B0084C810 /* CLHPopViewController.m */,
+				C1B593731E7429E70084C810 /* CLHPresentationController.h */,
+				C1B593741E7429E70084C810 /* CLHPresentationController.m */,
+				C10C224E1E73F40E00FE9828 /* CLHPopAnimation.h */,
+				C10C224F1E73F40E00FE9828 /* CLHPopAnimation.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA20B6311E5C301B00E9D59A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B73D1E5C6F7D00E9D59A /* CLHMessage.h */,
+				BA20B73E1E5C6F7D00E9D59A /* CLHMessage.m */,
+				BAA2826E1E5F18C400C0DEC7 /* CLHFriendInfomation.h */,
+				BAA2826F1E5F18C400C0DEC7 /* CLHFriendInfomation.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA20B6321E5C301B00E9D59A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA30829E1E5D5B460073FF74 /* CLHChatmessageCell.h */,
+				BA30829F1E5D5B460073FF74 /* CLHChatmessageCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA20B6331E5C301B00E9D59A /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B6341E5C301B00E9D59A /* Controller */,
+				BA20B6351E5C301B00E9D59A /* Model */,
+				BA20B6361E5C301B00E9D59A /* View */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		BA20B6341E5C301B00E9D59A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B6521E5C33EE00E9D59A /* CLHContactsViewController.h */,
+				BA20B6531E5C33EE00E9D59A /* CLHContactsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA20B6351E5C301B00E9D59A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAA282491E5F061300C0DEC7 /* Friends.plist */,
+				BAA282431E5EFFD000C0DEC7 /* CLHFriend.h */,
+				BAA282441E5EFFD000C0DEC7 /* CLHFriend.m */,
+				BAA282461E5EFFE400C0DEC7 /* CLHFriendGroup.h */,
+				BAA282471E5EFFE400C0DEC7 /* CLHFriendGroup.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA20B6361E5C301B00E9D59A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA20B6371E5C301B00E9D59A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B6381E5C301B00E9D59A /* Controller */,
+				BA20B6391E5C301B00E9D59A /* Model */,
+				BA20B63A1E5C301B00E9D59A /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		BA20B6381E5C301B00E9D59A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C11EA8E81E8551E5005F34C1 /* shakeOff */,
+				C1523A071E82B2B30065A2E0 /* photoBrowser */,
+				BA1FDA7A1E62FA600013B328 /* head */,
+				BA20B6551E5C341500E9D59A /* CLHDiscoverViewController.h */,
+				BA20B6561E5C341500E9D59A /* CLHDiscoverViewController.m */,
+				BA9C89E51E5ED61F008A8200 /* CLHFriendSpaceViewController.h */,
+				BA9C89E61E5ED61F008A8200 /* CLHFriendSpaceViewController.m */,
+				BA1FDA741E62BE560013B328 /* CLHSeeBigPhotoViewController.h */,
+				BA1FDA751E62BE560013B328 /* CLHSeeBigPhotoViewController.m */,
+				C19571301E6BA9E100054E62 /* CLHWebViewController.h */,
+				C19571311E6BA9E100054E62 /* CLHWebViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA20B6391E5C301B00E9D59A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BADA79871E6055EC007E3442 /* CLHFriendCircleModel.h */,
+				BADA79881E6055EC007E3442 /* CLHFriendCircleModel.m */,
+				BADFF3881E6175C200756611 /* CLHLikeModel.h */,
+				BADFF3891E6175C200756611 /* CLHLikeModel.m */,
+				BADFF38B1E617D8500756611 /* CLHCommentModel.h */,
+				BADFF38C1E617D8500756611 /* CLHCommentModel.m */,
+				BADFF38E1E6181EA00756611 /* CLHBaseModel.h */,
+				BADFF38F1E6181EA00756611 /* CLHBaseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA20B63A1E5C301B00E9D59A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BADA79841E6052C1007E3442 /* CLHFriendCircleCell.h */,
+				BADA79851E6052C1007E3442 /* CLHFriendCircleCell.m */,
+				BADFF37F1E61448200756611 /* CLHWerChatPhotoView.h */,
+				BADFF3801E61448200756611 /* CLHWerChatPhotoView.m */,
+				BADFF3821E615E0600756611 /* CLHLikeAndCommentView.h */,
+				BADFF3831E615E0600756611 /* CLHLikeAndCommentView.m */,
+				BADFF3851E61668D00756611 /* CLHCommentView.h */,
+				BADFF3861E61668D00756611 /* CLHCommentView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA20B63B1E5C301B00E9D59A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B63C1E5C301B00E9D59A /* Controller */,
+				BA20B63D1E5C301B00E9D59A /* Model */,
+				BA20B63E1E5C301B00E9D59A /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BA20B63C1E5C301B00E9D59A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B7351E5C69DD00E9D59A /* CLHNavigationController.h */,
+				BA20B7361E5C69DD00E9D59A /* CLHNavigationController.m */,
+				BA20B64A1E5C320A00E9D59A /* CLHTabBarViewController.h */,
+				BA20B64B1E5C320A00E9D59A /* CLHTabBarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA20B63D1E5C301B00E9D59A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA20B63E1E5C301B00E9D59A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA20B63F1E5C301B00E9D59A /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B6401E5C301B00E9D59A /* Controller */,
+				BA20B6411E5C301B00E9D59A /* Model */,
+				BA20B6421E5C301B00E9D59A /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		BA20B6401E5C301B00E9D59A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B6581E5C342400E9D59A /* CLHMeViewController.h */,
+				BA20B6591E5C342400E9D59A /* CLHMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA20B6411E5C301B00E9D59A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA20B6421E5C301B00E9D59A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA20B6431E5C301B00E9D59A /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B6441E5C301B00E9D59A /* AppDelegate.h */,
+				BA20B6451E5C301B00E9D59A /* AppDelegate.m */,
+				BA20B64E1E5C32B700E9D59A /* CLHPrefixHeader.pch */,
+				BA20B6461E5C301B00E9D59A /* Category */,
+				BA20B6471E5C301B00E9D59A /* main.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		BA20B6461E5C301B00E9D59A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B65E1E5C367800E9D59A /* UIBarButtonItem+CLH.h */,
+				BA20B65F1E5C367800E9D59A /* UIBarButtonItem+CLH.m */,
+				BA20B6601E5C367800E9D59A /* UIImage+CLH.h */,
+				BA20B6611E5C367800E9D59A /* UIImage+CLH.m */,
+				BA20B6641E5C367800E9D59A /* UITextField+CLH.h */,
+				BA20B6651E5C367800E9D59A /* UITextField+CLH.m */,
+				BA20B6661E5C367800E9D59A /* UIView+CLH.h */,
+				BA20B6671E5C367800E9D59A /* UIView+CLH.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C11EA8DB1E853E7F005F34C1 /* coreData */ = {
+			isa = PBXGroup;
+			children = (
+				C11EA8E51E85472E005F34C1 /* CLHChatData.xcdatamodeld */,
+			);
+			path = coreData;
+			sourceTree = "<group>";
+		};
+		C11EA8E81E8551E5005F34C1 /* shakeOff */ = {
+			isa = PBXGroup;
+			children = (
+				C11EA8E91E855200005F34C1 /* CLHShakeOffViewController.h */,
+				C11EA8EA1E855200005F34C1 /* CLHShakeOffViewController.m */,
+			);
+			path = shakeOff;
+			sourceTree = "<group>";
+		};
+		C1523A071E82B2B30065A2E0 /* photoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				C1523A081E82B2E60065A2E0 /* CLHPhotoBrowserViewController.h */,
+				C1523A091E82B2E60065A2E0 /* CLHPhotoBrowserViewController.m */,
+				C1523A0B1E82B3410065A2E0 /* CLHPhotoCell.h */,
+				C1523A0C1E82B3410065A2E0 /* CLHPhotoCell.m */,
+				C1893F551E83F1C000986416 /* CLHPhotoBrowserAnimator.h */,
+				C1893F561E83F1C000986416 /* CLHPhotoBrowserAnimator.m */,
+			);
+			path = photoBrowser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA20B6101E5C2FCD00E9D59A /* wechats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA20B62B1E5C2FCD00E9D59A /* Build configuration list for PBXNativeTarget "wechats" */;
+			buildPhases = (
+				888F8A108766291C84375DF1 /* [CP] Check Pods Manifest.lock */,
+				BA20B60D1E5C2FCD00E9D59A /* Sources */,
+				BA20B60E1E5C2FCD00E9D59A /* Frameworks */,
+				BA20B60F1E5C2FCD00E9D59A /* Resources */,
+				4C43981485FBF27A30BDE747 /* [CP] Embed Pods Frameworks */,
+				ECF3BCBE0BA253059CEF25A5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wechats;
+			productName = wechats;
+			productReference = BA20B6111E5C2FCD00E9D59A /* wechats.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA20B6091E5C2FCD00E9D59A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CLH;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = AnICoo1;
+				TargetAttributes = {
+					BA20B6101E5C2FCD00E9D59A = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2N9X9K6HR4;
+					};
+				};
+			};
+			buildConfigurationList = BA20B60C1E5C2FCD00E9D59A /* Build configuration list for PBXProject "wechats" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA20B6081E5C2FCD00E9D59A;
+			productRefGroup = BA20B6121E5C2FCD00E9D59A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA20B6101E5C2FCD00E9D59A /* wechats */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA20B60F1E5C2FCD00E9D59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA20B6271E5C2FCD00E9D59A /* LaunchScreen.storyboard in Resources */,
+				BA20B6241E5C2FCD00E9D59A /* Assets.xcassets in Resources */,
+				BAA2824A1E5F061300C0DEC7 /* Friends.plist in Resources */,
+				BA20B61F1E5C2FCD00E9D59A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C43981485FBF27A30BDE747 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wechats/Pods-wechats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		888F8A108766291C84375DF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECF3BCBE0BA253059CEF25A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wechats/Pods-wechats-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA20B60D1E5C2FCD00E9D59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA20B65A1E5C342400E9D59A /* CLHMeViewController.m in Sources */,
+				C19571321E6BA9E200054E62 /* CLHWebViewController.m in Sources */,
+				C11EA8EB1E855200005F34C1 /* CLHShakeOffViewController.m in Sources */,
+				BA20B6681E5C367800E9D59A /* UIBarButtonItem+CLH.m in Sources */,
+				BA20B6481E5C301B00E9D59A /* AppDelegate.m in Sources */,
+				BAA282481E5EFFE400C0DEC7 /* CLHFriendGroup.m in Sources */,
+				BA1FDA761E62BE560013B328 /* CLHSeeBigPhotoViewController.m in Sources */,
+				BA1FDA7D1E62FA730013B328 /* CLHHeadView.m in Sources */,
+				BA20B7371E5C69DD00E9D59A /* CLHNavigationController.m in Sources */,
+				BAA282451E5EFFD000C0DEC7 /* CLHFriend.m in Sources */,
+				C1893F571E83F1C000986416 /* CLHPhotoBrowserAnimator.m in Sources */,
+				BADFF3811E61448200756611 /* CLHWerChatPhotoView.m in Sources */,
+				C1523A0D1E82B3410065A2E0 /* CLHPhotoCell.m in Sources */,
+				C1B593781E742A2B0084C810 /* CLHPopViewController.m in Sources */,
+				BA20B6511E5C33D600E9D59A /* CLHChatViewController.m in Sources */,
+				C11EA8E71E85472E005F34C1 /* CLHChatData.xcdatamodeld in Sources */,
+				C1B593751E7429E70084C810 /* CLHPresentationController.m in Sources */,
+				BA20B66B1E5C367800E9D59A /* UITextField+CLH.m in Sources */,
+				BA9C89E71E5ED61F008A8200 /* CLHFriendSpaceViewController.m in Sources */,
+				BADFF3901E6181EA00756611 /* CLHBaseModel.m in Sources */,
+				BA20B6491E5C301B00E9D59A /* main.m in Sources */,
+				BADFF38A1E6175C200756611 /* CLHLikeModel.m in Sources */,
+				BA20B64C1E5C320A00E9D59A /* CLHTabBarViewController.m in Sources */,
+				BA20B6571E5C341500E9D59A /* CLHDiscoverViewController.m in Sources */,
+				BA20B66C1E5C367800E9D59A /* UIView+CLH.m in Sources */,
+				BA3082A01E5D5B460073FF74 /* CLHChatmessageCell.m in Sources */,
+				BA20B6691E5C367800E9D59A /* UIImage+CLH.m in Sources */,
+				BA20B73F1E5C6F7D00E9D59A /* CLHMessage.m in Sources */,
+				BADA79861E6052C1007E3442 /* CLHFriendCircleCell.m in Sources */,
+				C1523A0A1E82B2E60065A2E0 /* CLHPhotoBrowserViewController.m in Sources */,
+				BADFF3841E615E0600756611 /* CLHLikeAndCommentView.m in Sources */,
+				BADA79891E6055EC007E3442 /* CLHFriendCircleModel.m in Sources */,
+				BA20B6221E5C2FCD00E9D59A /* wechats.xcdatamodeld in Sources */,
+				BADFF3871E61668D00756611 /* CLHCommentView.m in Sources */,
+				C10C22521E73F40E00FE9828 /* CLHPopAnimation.m in Sources */,
+				BADFF38D1E617D8500756611 /* CLHCommentModel.m in Sources */,
+				BA20B7411E5C779300E9D59A /* CLHChatWithPersonViewController.m in Sources */,
+				BAA282701E5F18C400C0DEC7 /* CLHFriendInfomation.m in Sources */,
+				BA20B6541E5C33EE00E9D59A /* CLHContactsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA20B61D1E5C2FCD00E9D59A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA20B61E1E5C2FCD00E9D59A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA20B6251E5C2FCD00E9D59A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA20B6261E5C2FCD00E9D59A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA20B6291E5C2FCD00E9D59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA20B62A1E5C2FCD00E9D59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA20B62C1E5C2FCD00E9D59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837C77109C71F1501F85A44A /* Pods-wechats.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2N9X9K6HR4;
+				GCC_PREFIX_HEADER = /Users/helloiamclh/Desktop/weixin/WeXin/wechats/Classes/Others/CLHPrefixHeader.pch;
+				INFOPLIST_FILE = wechats/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clh.wechats;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BA20B62D1E5C2FCD00E9D59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB16ADA9540042D4CE9DDE36 /* Pods-wechats.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2N9X9K6HR4;
+				GCC_PREFIX_HEADER = /Users/helloiamclh/Desktop/weixin/WeXin/wechats/Classes/Others/CLHPrefixHeader.pch;
+				INFOPLIST_FILE = wechats/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clh.wechats;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA20B60C1E5C2FCD00E9D59A /* Build configuration list for PBXProject "wechats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA20B6291E5C2FCD00E9D59A /* Debug */,
+				BA20B62A1E5C2FCD00E9D59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA20B62B1E5C2FCD00E9D59A /* Build configuration list for PBXNativeTarget "wechats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA20B62C1E5C2FCD00E9D59A /* Debug */,
+				BA20B62D1E5C2FCD00E9D59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA20B6201E5C2FCD00E9D59A /* wechats.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA20B6211E5C2FCD00E9D59A /* wechats.xcdatamodel */,
+			);
+			currentVersion = BA20B6211E5C2FCD00E9D59A /* wechats.xcdatamodel */;
+			path = wechats.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		C11EA8E51E85472E005F34C1 /* CLHChatData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C11EA8E61E85472E005F34C1 /* CLHChatData.xcdatamodel */,
+			);
+			currentVersion = C11EA8E61E85472E005F34C1 /* CLHChatData.xcdatamodel */;
+			path = CLHChatData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BA20B6091E5C2FCD00E9D59A /* Project object */;
+}
