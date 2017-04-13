@@ -8,16 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+
+/**
+ 图片查看器cell协议
+ */
 @protocol photoCellDelegate <NSObject>
 
+/**
+ 图片查看器被点击
+ */
 - (void)imageViewDidClick;
 
 @end
 
 @interface CLHPhotoCell : UICollectionViewCell
-
+/**图片*/
 @property (nonatomic, strong) UIImageView *imageView;
-
 @property (nonatomic, weak) id<photoCellDelegate> delegate;
 
 @end

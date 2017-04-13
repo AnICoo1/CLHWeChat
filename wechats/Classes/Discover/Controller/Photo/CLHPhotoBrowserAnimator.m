@@ -10,14 +10,12 @@
 
 
 @interface CLHPhotoBrowserAnimator ()
-
+/**判断当前动画是弹出还是消失*/
 @property(nonatomic, assign, getter=isPresented) BOOL presented;
 
 @end
 
 @implementation CLHPhotoBrowserAnimator
-
-
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
     self.presented = YES;
@@ -28,8 +26,6 @@
     self.presented = NO;
     return self;
 }
-
-
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
     return 0.5;
@@ -50,9 +46,9 @@
     [transitionContext.containerView addSubview:presentView];
     
     //获取开始尺寸和结束尺寸
-    CGRect startRect = [self.animationDelegate startRect:self.index];
-    CGRect endRect = [self.animationDelegate endRect:self.index];
-    UIImageView *imageView = [self.animationDelegate locImageView:self.index];
+    CGRect startRect = [self.animationPresentDelegate startRect:self.index];
+    CGRect endRect = [self.animationPresentDelegate endRect:self.index];
+    UIImageView *imageView = [self.animationPresentDelegate locImageView:self.index];
     [transitionContext.containerView addSubview:imageView];
     imageView.frame = startRect;
     
@@ -76,9 +72,8 @@
     UIImageView *imageView = [self.animationDismissDelegate imageViewForDismissView];
     [transitionContext.containerView addSubview:imageView];
     NSInteger index = [self.animationDismissDelegate indexForDismissView];
-    
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-        imageView.frame = [self.animationDelegate startRect:index];
+        imageView.frame = [self.animationPresentDelegate startRect:index];
     } completion:^(BOOL finished) {
         [transitionContext completeTransition:YES];
     }];

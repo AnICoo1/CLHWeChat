@@ -9,8 +9,7 @@
 #import "CLHPhotoBrowserViewController.h"
 #import "CLHPhotoCell.h"
 
-
-@interface CLHPhotoBrowserViewController () <photoCellDelegate,UICollectionViewDataSource>
+@interface CLHPhotoBrowserViewController () <photoCellDelegate,UICollectionViewDataSource, UICollectionViewDelegate>
 
 @end
 
@@ -19,7 +18,9 @@ static NSString *ID = @"cell";
 @implementation CLHPhotoBrowserViewController
 {
     UICollectionView *_collectionView;
+    UIPageControl *_pageControl;
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,28 +29,48 @@ static NSString *ID = @"cell";
     [self setUpAll];
     //跳转到指定页
     [_collectionView scrollToItemAtIndexPath:self.indexPath atScrollPosition: UICollectionViewScrollPositionLeft animated:NO];
-//    NSLog(@"%zd",self.indexPath.row);
-    
+    _pageControl.currentPage = self.indexPath.row;
 }
 
 - (void)setUpAll{
+    //设置分页器
+    _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 40, [UIScreen mainScreen].bounds.size.width, 20)];
+    _pageControl.currentPage = 1;
+    _pageControl.userInteractionEnabled = NO;
+    [self.view addSubview:_pageControl];
+    //流水布局
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake(screenW, screenH);
+    layout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     layout.minimumLineSpacing = 0;
     layout.minimumInteritemSpacing = 0;
     
+    //collectionView设置
     _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     [_collectionView registerClass:[CLHPhotoCell class] forCellWithReuseIdentifier:ID];
+    _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.pagingEnabled = YES;
     _collectionView.frame = self.view.bounds;
-    [self.view addSubview:_collectionView];
+    [self.view insertSubview:_collectionView atIndex:0];
+}
+
+#pragma mark - UICollectionViewDelegate
+
+//collection滚动
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat contenOffset = scrollView.contentOffset.x;
+    //通过滚动算出在哪一页
+    int page = contenOffset / scrollView.frame.size.width + ((int)contenOffset % (int)scrollView.frame.size.width == 0 ? 0 : 1);
+    _pageControl.currentPage = page;
+    
 }
 
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return self.imageArray.count;
+    NSInteger count = self.imageArray.count;
+    _pageControl.numberOfPages = count;
+    return count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -58,6 +79,7 @@ static NSString *ID = @"cell";
     cell.delegate = self;
     return cell;
 }
+
 - (void)imageViewDidClick{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -77,7 +99,6 @@ static NSString *ID = @"cell";
     imageView.contentMode = UIViewContentModeScaleToFill;
     imageView.clipsToBounds = YES;
     return imageView;
-    
 }
 
 @end

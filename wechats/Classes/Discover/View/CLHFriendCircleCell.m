@@ -10,7 +10,7 @@
 #import "SDAutoLayout.h"
 
 #import "CLHFriendCircleModel.h"
-#import "CLHWerChatPhotoView.h"
+#import "CLHPhotoBrowser.h"
 #import "CLHLikeAndCommentView.h"
 #import "CLHCommentView.h"
 #import "CLHBaseModel.h"
@@ -26,7 +26,7 @@ CGFloat maxContentLabelHeight = 0;
     UILabel *_nameLable;
     UILabel *_contentLabel;
     UIButton *_openOrCloseButton;
-    CLHWerChatPhotoView *_photoView;
+    CLHPhotoBrowser *_photoView;
     UIButton *_commentButton;
     CLHLikeAndCommentView *_commentView;
     CLHCommentView *_otherCommentView;
@@ -67,7 +67,7 @@ CGFloat maxContentLabelHeight = 0;
     [_openOrCloseButton addTarget:self action:@selector(openButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     
     //图片
-    _photoView = [[CLHWerChatPhotoView alloc] init];
+    _photoView = [[CLHPhotoBrowser alloc] init];
     
     //评论按钮
     _commentButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -157,7 +157,7 @@ CGFloat maxContentLabelHeight = 0;
     _iconView.image = [UIImage imageNamed:friendCircleModel.iconName];
     _nameLable.text = friendCircleModel.name;
     _contentLabel.text = friendCircleModel.contentText;
-    _photoView.photoArray = friendCircleModel.photoNamesArray;
+    _photoView.imageDataArray = friendCircleModel.photoNamesArray;
     
     CLHBaseModel *baseModel = [[CLHBaseModel alloc] init];
     baseModel.likeArray = friendCircleModel.likeArray;

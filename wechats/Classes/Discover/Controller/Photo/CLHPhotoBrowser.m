@@ -1,26 +1,26 @@
 //
-//  CLHWerChatPhotoView.m
-//  wechats
+//  CLHPhotoBrowser.m
+//  onlytest
 //
-//  Created by AnICoo1 on 17/2/25.
+//  Created by AnICoo1 on 2017/4/11.
 //  Copyright © 2017年 AnICoo1. All rights reserved.
 //
 
-#import "CLHWerChatPhotoView.h"
-#import "CLHSeeBigPhotoViewController.h"
-#import "CLHPhotoBrowserViewController.h"
+#import "CLHPhotoBrowser.h"
+#import "UIView+CLH.h"
 #import "CLHPhotoBrowserAnimator.h"
+#import "CLHPhotoBrowserViewController.h"
 
-@interface CLHWerChatPhotoView () <photoBrowserAnimatorDelegate>
 
+@interface CLHPhotoBrowser () <photoBrowserAnimatorPresentDelegate>
 
-@property(nonatomic, strong) CLHPhotoBrowserAnimator *animator;
+@property (nonatomic, strong) CLHPhotoBrowserAnimator *animator;
 
 @end
 
-@implementation CLHWerChatPhotoView
+@implementation CLHPhotoBrowser
 
-#pragma mark - 懒加载
+#pragma amrk - 懒加载
 - (CLHPhotoBrowserAnimator *)animator{
     if(!_animator){
         _animator = [[CLHPhotoBrowserAnimator alloc] init];
@@ -28,36 +28,33 @@
     return _animator;
 }
 
-
-- (void)setPhotoArray:(NSArray *)photoArray{
-    _photoArray = photoArray;
+- (void)setImageDataArray:(NSMutableArray<NSString *> *)imageDataArray{
+    _imageDataArray = imageDataArray;
     
-    NSInteger count = photoArray.count;
-//    NSLog(@"count = %zd",count);
+    NSInteger count = imageDataArray.count;
     if(count == 0){
         self.height = 0;
         self.fixedHeight = @(0);
         return ;
     }
-    
     //设置imageView宽高
     CGFloat imageW = [self getWidthOfImageView];
     CGFloat imageH = 0;
     if(count == 1){//只有一张图片
-        UIImage *image = [UIImage imageNamed:_photoArray.firstObject];
+        UIImage *image = [UIImage imageNamed:_imageDataArray.firstObject];
         if (image.size.width) {
             imageH = image.size.height / image.size.width * imageW;
         }
     } else{
         imageH = imageW;
     }
-    
+    //获取行数
     NSInteger NumberPerRow = [self getNumberOfPerRow];
     
     for(NSInteger i = 0; i < count; i++){
         UIImageView *imageV = [[UIImageView alloc] init];
         imageV.userInteractionEnabled = YES;
-        imageV.image = [UIImage imageNamed:_photoArray[i]];
+        imageV.image = [UIImage imageNamed:_imageDataArray[i]];
         imageV.tag = i;
         NSInteger column = i % NumberPerRow;
         NSInteger row = i / NumberPerRow;
@@ -74,24 +71,19 @@
     CGFloat h = columnCount * imageH + (columnCount - 1) * 5;
     self.width = w;
     self.height = h;
-    
-//    NSLog(@"w = %f, h = %f",w,h);
     self.fixedHeight = @(h);
     self.fixedWidth = @(w);
-    
 }
 
+#pragma mark - 监听事件
 - (void)click:(UITapGestureRecognizer *)tap{
-//    UIView *imageV = tap.view;
-//    CLHSeeBigPhotoViewController *seeV = [[CLHSeeBigPhotoViewController alloc] init];
-//    seeV.bigPhotoArray = self.photoArray;
-//    seeV.index = imageV.tag;
     CLHPhotoBrowserViewController *photoVC = [[CLHPhotoBrowserViewController alloc] init];
-    photoVC.imageArray = self.photoArray;
+    photoVC.imageArray = self.imageDataArray;
     photoVC.indexPath = [NSIndexPath indexPathForRow:tap.view.tag inSection:0];
     photoVC.modalPresentationStyle = UIModalPresentationCustom;
     photoVC.transitioningDelegate = self.animator;
-    self.animator.animationDelegate = self;
+    
+    self.animator.animationPresentDelegate = self;
     self.animator.index = tap.view.tag;
     self.animator.animationDismissDelegate = photoVC;
     
@@ -114,21 +106,21 @@
 }
 
 - (CGRect)endRect:(NSInteger)index{
-    UIImage *image = [UIImage imageNamed:self.photoArray[index]];
+    UIImage *image = [UIImage imageNamed:self.imageDataArray[index]];
     //计算imageView的frame
     CGFloat x = 0;
-    CGFloat width = screenW;
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = width / image.size.width * image.size.height;
     CGFloat y = 0;
-    if(height < screenH){
-        y = (screenH - height) * 0.5;
+    if(height < [UIScreen mainScreen].bounds.size.height){
+        y = ([UIScreen mainScreen].bounds.size.height - height) * 0.5;
     }
     return CGRectMake(x, y, width, height);
 }
 
 - (UIImageView *)locImageView:(NSInteger)index{
     UIImageView *imageView = [[UIImageView alloc] init];
-    UIImage *image = [UIImage imageNamed:self.photoArray[index]];
+    UIImage *image = [UIImage imageNamed:self.imageDataArray[index]];
     imageView.image = image;
     imageView.contentMode = UIViewContentModeScaleToFill;
     imageView.clipsToBounds = YES;
@@ -136,7 +128,7 @@
 }
 
 - (CGFloat)getWidthOfImageView{
-    if(self.photoArray.count == 1){
+    if(self.imageDataArray.count == 1){
         return 120;
     }else{
         return 80;
@@ -144,13 +136,12 @@
 }
 
 - (NSInteger)getNumberOfPerRow{
-    if (self.photoArray.count < 3) {
-        return self.photoArray.count;
-    } else if (self.photoArray.count <= 4) {
+    if (self.imageDataArray.count < 3) {
+        return self.imageDataArray.count;
+    } else if (self.imageDataArray.count <= 4) {
         return 2;
     } else {
         return 3;
     }
 }
-
 @end

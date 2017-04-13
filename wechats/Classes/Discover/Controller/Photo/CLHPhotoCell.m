@@ -8,7 +8,8 @@
 
 #import "CLHPhotoCell.h"
 
-
+#define screenW [UIScreen mainScreen].bounds.size.width
+#define screenH [UIScreen mainScreen].bounds.size.height
 
 @implementation CLHPhotoCell
 {
@@ -41,7 +42,9 @@
 
 
 - (void)imageViewClick{
-    [self.delegate imageViewDidClick];
+    if([self.delegate respondsToSelector:@selector(imageViewDidClick)]){
+        [self.delegate imageViewDidClick];
+    }
 }
 
 @end

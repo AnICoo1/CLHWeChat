@@ -36,7 +36,6 @@
 		BAA282701E5F18C400C0DEC7 /* CLHFriendInfomation.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA2826F1E5F18C400C0DEC7 /* CLHFriendInfomation.m */; };
 		BADA79861E6052C1007E3442 /* CLHFriendCircleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADA79851E6052C1007E3442 /* CLHFriendCircleCell.m */; };
 		BADA79891E6055EC007E3442 /* CLHFriendCircleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BADA79881E6055EC007E3442 /* CLHFriendCircleModel.m */; };
-		BADFF3811E61448200756611 /* CLHWerChatPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = BADFF3801E61448200756611 /* CLHWerChatPhotoView.m */; };
 		BADFF3841E615E0600756611 /* CLHLikeAndCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BADFF3831E615E0600756611 /* CLHLikeAndCommentView.m */; };
 		BADFF3871E61668D00756611 /* CLHCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BADFF3861E61668D00756611 /* CLHCommentView.m */; };
 		BADFF38A1E6175C200756611 /* CLHLikeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BADFF3891E6175C200756611 /* CLHLikeModel.m */; };
@@ -45,9 +44,10 @@
 		C10C22521E73F40E00FE9828 /* CLHPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C10C224F1E73F40E00FE9828 /* CLHPopAnimation.m */; };
 		C11EA8E71E85472E005F34C1 /* CLHChatData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C11EA8E51E85472E005F34C1 /* CLHChatData.xcdatamodeld */; };
 		C11EA8EB1E855200005F34C1 /* CLHShakeOffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11EA8EA1E855200005F34C1 /* CLHShakeOffViewController.m */; };
-		C1523A0A1E82B2E60065A2E0 /* CLHPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1523A091E82B2E60065A2E0 /* CLHPhotoBrowserViewController.m */; };
-		C1523A0D1E82B3410065A2E0 /* CLHPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1523A0C1E82B3410065A2E0 /* CLHPhotoCell.m */; };
-		C1893F571E83F1C000986416 /* CLHPhotoBrowserAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C1893F561E83F1C000986416 /* CLHPhotoBrowserAnimator.m */; };
+		C16EBD901E9F667D00A0C4E2 /* CLHPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = C16EBD871E9F667D00A0C4E2 /* CLHPhotoBrowser.m */; };
+		C16EBD911E9F667D00A0C4E2 /* CLHPhotoBrowserAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C16EBD891E9F667D00A0C4E2 /* CLHPhotoBrowserAnimator.m */; };
+		C16EBD921E9F667D00A0C4E2 /* CLHPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16EBD8B1E9F667D00A0C4E2 /* CLHPhotoBrowserViewController.m */; };
+		C16EBD931E9F667D00A0C4E2 /* CLHPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C16EBD8D1E9F667D00A0C4E2 /* CLHPhotoCell.m */; };
 		C19571321E6BA9E200054E62 /* CLHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19571311E6BA9E100054E62 /* CLHWebViewController.m */; };
 		C19571341E6BAA4D00054E62 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19571331E6BAA4D00054E62 /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C1B593751E7429E70084C810 /* CLHPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B593741E7429E70084C810 /* CLHPresentationController.m */; };
@@ -110,8 +110,6 @@
 		BADA79851E6052C1007E3442 /* CLHFriendCircleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHFriendCircleCell.m; sourceTree = "<group>"; };
 		BADA79871E6055EC007E3442 /* CLHFriendCircleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHFriendCircleModel.h; sourceTree = "<group>"; };
 		BADA79881E6055EC007E3442 /* CLHFriendCircleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHFriendCircleModel.m; sourceTree = "<group>"; };
-		BADFF37F1E61448200756611 /* CLHWerChatPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHWerChatPhotoView.h; sourceTree = "<group>"; };
-		BADFF3801E61448200756611 /* CLHWerChatPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHWerChatPhotoView.m; sourceTree = "<group>"; };
 		BADFF3821E615E0600756611 /* CLHLikeAndCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHLikeAndCommentView.h; sourceTree = "<group>"; };
 		BADFF3831E615E0600756611 /* CLHLikeAndCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHLikeAndCommentView.m; sourceTree = "<group>"; };
 		BADFF3851E61668D00756611 /* CLHCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHCommentView.h; sourceTree = "<group>"; };
@@ -128,12 +126,14 @@
 		C11EA8E61E85472E005F34C1 /* CLHChatData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CLHChatData.xcdatamodel; sourceTree = "<group>"; };
 		C11EA8E91E855200005F34C1 /* CLHShakeOffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHShakeOffViewController.h; sourceTree = "<group>"; };
 		C11EA8EA1E855200005F34C1 /* CLHShakeOffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHShakeOffViewController.m; sourceTree = "<group>"; };
-		C1523A081E82B2E60065A2E0 /* CLHPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPhotoBrowserViewController.h; sourceTree = "<group>"; };
-		C1523A091E82B2E60065A2E0 /* CLHPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHPhotoBrowserViewController.m; sourceTree = "<group>"; };
-		C1523A0B1E82B3410065A2E0 /* CLHPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPhotoCell.h; sourceTree = "<group>"; };
-		C1523A0C1E82B3410065A2E0 /* CLHPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHPhotoCell.m; sourceTree = "<group>"; };
-		C1893F551E83F1C000986416 /* CLHPhotoBrowserAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPhotoBrowserAnimator.h; sourceTree = "<group>"; };
-		C1893F561E83F1C000986416 /* CLHPhotoBrowserAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHPhotoBrowserAnimator.m; sourceTree = "<group>"; };
+		C16EBD861E9F667D00A0C4E2 /* CLHPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPhotoBrowser.h; sourceTree = "<group>"; };
+		C16EBD871E9F667D00A0C4E2 /* CLHPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHPhotoBrowser.m; sourceTree = "<group>"; };
+		C16EBD881E9F667D00A0C4E2 /* CLHPhotoBrowserAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPhotoBrowserAnimator.h; sourceTree = "<group>"; };
+		C16EBD891E9F667D00A0C4E2 /* CLHPhotoBrowserAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHPhotoBrowserAnimator.m; sourceTree = "<group>"; };
+		C16EBD8A1E9F667D00A0C4E2 /* CLHPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		C16EBD8B1E9F667D00A0C4E2 /* CLHPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHPhotoBrowserViewController.m; sourceTree = "<group>"; };
+		C16EBD8C1E9F667D00A0C4E2 /* CLHPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHPhotoCell.h; sourceTree = "<group>"; };
+		C16EBD8D1E9F667D00A0C4E2 /* CLHPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHPhotoCell.m; sourceTree = "<group>"; };
 		C19571301E6BA9E100054E62 /* CLHWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHWebViewController.h; sourceTree = "<group>"; };
 		C19571311E6BA9E100054E62 /* CLHWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHWebViewController.m; sourceTree = "<group>"; };
 		C19571331E6BAA4D00054E62 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -334,8 +334,8 @@
 		BA20B6381E5C301B00E9D59A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C16EBD851E9F667D00A0C4E2 /* Photo */,
 				C11EA8E81E8551E5005F34C1 /* shakeOff */,
-				C1523A071E82B2B30065A2E0 /* photoBrowser */,
 				BA1FDA7A1E62FA600013B328 /* head */,
 				BA20B6551E5C341500E9D59A /* CLHDiscoverViewController.h */,
 				BA20B6561E5C341500E9D59A /* CLHDiscoverViewController.m */,
@@ -369,8 +369,6 @@
 			children = (
 				BADA79841E6052C1007E3442 /* CLHFriendCircleCell.h */,
 				BADA79851E6052C1007E3442 /* CLHFriendCircleCell.m */,
-				BADFF37F1E61448200756611 /* CLHWerChatPhotoView.h */,
-				BADFF3801E61448200756611 /* CLHWerChatPhotoView.m */,
 				BADFF3821E615E0600756611 /* CLHLikeAndCommentView.h */,
 				BADFF3831E615E0600756611 /* CLHLikeAndCommentView.m */,
 				BADFF3851E61668D00756611 /* CLHCommentView.h */,
@@ -491,17 +489,19 @@
 			path = shakeOff;
 			sourceTree = "<group>";
 		};
-		C1523A071E82B2B30065A2E0 /* photoBrowser */ = {
+		C16EBD851E9F667D00A0C4E2 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
-				C1523A081E82B2E60065A2E0 /* CLHPhotoBrowserViewController.h */,
-				C1523A091E82B2E60065A2E0 /* CLHPhotoBrowserViewController.m */,
-				C1523A0B1E82B3410065A2E0 /* CLHPhotoCell.h */,
-				C1523A0C1E82B3410065A2E0 /* CLHPhotoCell.m */,
-				C1893F551E83F1C000986416 /* CLHPhotoBrowserAnimator.h */,
-				C1893F561E83F1C000986416 /* CLHPhotoBrowserAnimator.m */,
+				C16EBD861E9F667D00A0C4E2 /* CLHPhotoBrowser.h */,
+				C16EBD871E9F667D00A0C4E2 /* CLHPhotoBrowser.m */,
+				C16EBD881E9F667D00A0C4E2 /* CLHPhotoBrowserAnimator.h */,
+				C16EBD891E9F667D00A0C4E2 /* CLHPhotoBrowserAnimator.m */,
+				C16EBD8A1E9F667D00A0C4E2 /* CLHPhotoBrowserViewController.h */,
+				C16EBD8B1E9F667D00A0C4E2 /* CLHPhotoBrowserViewController.m */,
+				C16EBD8C1E9F667D00A0C4E2 /* CLHPhotoCell.h */,
+				C16EBD8D1E9F667D00A0C4E2 /* CLHPhotoCell.m */,
 			);
-			path = photoBrowser;
+			path = Photo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -634,16 +634,15 @@
 				BA20B6681E5C367800E9D59A /* UIBarButtonItem+CLH.m in Sources */,
 				BA20B6481E5C301B00E9D59A /* AppDelegate.m in Sources */,
 				BAA282481E5EFFE400C0DEC7 /* CLHFriendGroup.m in Sources */,
+				C16EBD911E9F667D00A0C4E2 /* CLHPhotoBrowserAnimator.m in Sources */,
 				BA1FDA761E62BE560013B328 /* CLHSeeBigPhotoViewController.m in Sources */,
 				BA1FDA7D1E62FA730013B328 /* CLHHeadView.m in Sources */,
 				BA20B7371E5C69DD00E9D59A /* CLHNavigationController.m in Sources */,
 				BAA282451E5EFFD000C0DEC7 /* CLHFriend.m in Sources */,
-				C1893F571E83F1C000986416 /* CLHPhotoBrowserAnimator.m in Sources */,
-				BADFF3811E61448200756611 /* CLHWerChatPhotoView.m in Sources */,
-				C1523A0D1E82B3410065A2E0 /* CLHPhotoCell.m in Sources */,
 				C1B593781E742A2B0084C810 /* CLHPopViewController.m in Sources */,
 				BA20B6511E5C33D600E9D59A /* CLHChatViewController.m in Sources */,
 				C11EA8E71E85472E005F34C1 /* CLHChatData.xcdatamodeld in Sources */,
+				C16EBD901E9F667D00A0C4E2 /* CLHPhotoBrowser.m in Sources */,
 				C1B593751E7429E70084C810 /* CLHPresentationController.m in Sources */,
 				BA20B66B1E5C367800E9D59A /* UITextField+CLH.m in Sources */,
 				BA9C89E71E5ED61F008A8200 /* CLHFriendSpaceViewController.m in Sources */,
@@ -656,8 +655,9 @@
 				BA3082A01E5D5B460073FF74 /* CLHChatmessageCell.m in Sources */,
 				BA20B6691E5C367800E9D59A /* UIImage+CLH.m in Sources */,
 				BA20B73F1E5C6F7D00E9D59A /* CLHMessage.m in Sources */,
+				C16EBD931E9F667D00A0C4E2 /* CLHPhotoCell.m in Sources */,
 				BADA79861E6052C1007E3442 /* CLHFriendCircleCell.m in Sources */,
-				C1523A0A1E82B2E60065A2E0 /* CLHPhotoBrowserViewController.m in Sources */,
+				C16EBD921E9F667D00A0C4E2 /* CLHPhotoBrowserViewController.m in Sources */,
 				BADFF3841E615E0600756611 /* CLHLikeAndCommentView.m in Sources */,
 				BADA79891E6055EC007E3442 /* CLHFriendCircleModel.m in Sources */,
 				BA20B6221E5C2FCD00E9D59A /* wechats.xcdatamodeld in Sources */,
@@ -782,7 +782,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 2N9X9K6HR4;
-				GCC_PREFIX_HEADER = /Users/helloiamclh/Desktop/weixin/WeXin/wechats/Classes/Others/CLHPrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/helloiamclh/Desktop/CLHWeChat/wechats/Classes/Others/CLHPrefixHeader.pch;
 				INFOPLIST_FILE = wechats/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -800,7 +800,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 2N9X9K6HR4;
-				GCC_PREFIX_HEADER = /Users/helloiamclh/Desktop/weixin/WeXin/wechats/Classes/Others/CLHPrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/helloiamclh/Desktop/CLHWeChat/wechats/Classes/Others/CLHPrefixHeader.pch;
 				INFOPLIST_FILE = wechats/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

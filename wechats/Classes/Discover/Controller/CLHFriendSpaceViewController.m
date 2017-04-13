@@ -29,8 +29,6 @@
 
 @property(nonatomic, strong) NSMutableArray *friendItems;
 
-@property (nonatomic, strong) UITextField *textField;
-
 @end
 
 static NSString * const friendSpaceID = @"friendSpace";
@@ -66,8 +64,62 @@ static NSString * const friendSpaceID = @"friendSpace";
             item.like = NO;
             item;
         });
-        
+        CLHFriendCircleModel *item2 = ({
+            CLHFriendCircleModel *item = [[CLHFriendCircleModel alloc] init];
+            item.name = @"hello";
+            item.iconName = @"26";
+            item.contentText = @"hello everone,\n this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a test";
+            item.photoNamesArray = [NSArray arrayWithObjects:@"4", @"9", @"2", @"6", nil];
+            
+            CLHLikeModel *like = [[CLHLikeModel alloc] init];
+            like.name = @"no.1";
+            CLHLikeModel *like1= [[CLHLikeModel alloc] init];
+            like1.name = @"gaiwiahahtuiahitahtiuaghitiagwiutiwu";
+            CLHLikeModel *like2 = [[CLHLikeModel alloc] init];
+            like2.name = @"AnICoqtTwtewrwQErqro1";
+            
+            CLHCommentModel *comment = [[CLHCommentModel alloc] init];
+            comment.name = @"AnICoo1";
+            comment.text = @"this is a test";
+            CLHCommentModel *comment2 = [[CLHCommentModel alloc] init];
+            comment2.name = @"AnICoo2";
+            comment2.text = @"this is a test too";
+            
+            item.commentArray = [NSMutableArray arrayWithObjects:comment, comment2, nil];
+            item.likeArray = [NSMutableArray arrayWithObjects:like,like1, like2, nil];
+            item.like = NO;
+            item;
+        });
+        CLHFriendCircleModel *item3 = ({
+            CLHFriendCircleModel *item = [[CLHFriendCircleModel alloc] init];
+            item.name = @"hello";
+            item.iconName = @"26";
+            item.contentText = @"hello everone,\n this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a testhello everone, this is a test";
+            item.photoNamesArray = [NSArray arrayWithObjects:@"24", @"12", @"22", @"16", nil];
+            
+            CLHLikeModel *like = [[CLHLikeModel alloc] init];
+            like.name = @"no.1";
+            CLHLikeModel *like1= [[CLHLikeModel alloc] init];
+            like1.name = @"gaiwiahahtuiahitahtiuaghitiagwiutiwu";
+            CLHLikeModel *like2 = [[CLHLikeModel alloc] init];
+            like2.name = @"AnICoqtTwtewrwQErqro1";
+            
+            CLHCommentModel *comment = [[CLHCommentModel alloc] init];
+            comment.name = @"AnICoo1";
+            comment.text = @"this is a test";
+            CLHCommentModel *comment2 = [[CLHCommentModel alloc] init];
+            comment2.name = @"AnICoo2";
+            comment2.text = @"this is a test too";
+            
+            item.commentArray = [NSMutableArray arrayWithObjects:comment, comment2, nil];
+            item.likeArray = [NSMutableArray arrayWithObjects:like,like1, like2, nil];
+            item.like = NO;
+            item;
+        });
+
         [_friendItems addObject:item];
+        [_friendItems addObject:item2];
+        [_friendItems addObject:item3];
 
     }
     return _friendItems;
@@ -76,13 +128,6 @@ static NSString * const friendSpaceID = @"friendSpace";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpTableView];
-    //输入框
-    UITextField *textF = [[UITextField alloc] init];
-    textF.frame = CGRectMake(0, CGRectGetMaxY(self.tableView.frame), screenW, 30);
-    textF.placeholder= @"请输入";
-    textF.delegate = self;
-    self.textField = textF;
-    [[UIApplication sharedApplication].keyWindow addSubview:textF];
     // 注册键盘的通知hide or show
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardHide:) name:UIKeyboardWillHideNotification object:nil];
@@ -240,7 +285,7 @@ static NSString * const friendSpaceID = @"friendSpace";
 
 //点击了评论按钮，键盘弹出
 - (void)didClickCommentButtonInCell:(UITableViewCell *)cell{
-    [self.textField becomeFirstResponder];
+    
 }
 
 
